@@ -2,20 +2,33 @@
     font-family: comic sans ms;
     display: grid;
     justify-content: center;
+    grid-template-columns: 1fr 1fr;
+    grid-auto-rows: 1fr 1fr 1fr;
+
 }
 
 h2 {
 background-color: #92C47C;
 color: white;
+grid-rows: 1 / 2;
 }
 .ol {
     color: orange;
+    grid-row: 2 / 3;
 }
 input {
     border: 5px solid #92C47C;
+    grid-column: 1 / 2;
+    grid-rows: 4 / 5;
 }
-
 .button {
     border: 5px solid #92C47C;
-    color: #92C47C
+    color: #92C47C;
+    grid-column: 2 / 3;
+    grid-rows: 4 / 5;
+}
+
+#x {
+    background-color: red;
+    color: white;
 }
